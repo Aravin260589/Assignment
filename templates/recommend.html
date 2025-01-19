@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recommendations</title>
+</head>
+<body>
+    <h1>Recommended Movies</h1>
+    <ul>
+        {% for recommendation in recommendations %}
+            <li>{{ recommendation.Title }} - Rating: {{ recommendation.Rating }} - Genre: {{ recommendation.Genre }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back</a>
+</body>
+</html>
